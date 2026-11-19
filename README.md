@@ -7,10 +7,21 @@ Official Homebrew tap for agent harnesses, developer runtimes, and CLI tools by 
 | Formula | Description | Install Command |
 |---|---|---|
 | **[`agyo`](https://github.com/tiagovilasboas/antigravity-operator)** | Autonomous Session Agent Engine & Outer Harness for Google Antigravity | `brew install tiagovilasboas/tap/agyo` |
+| **[`downshift`](https://github.com/tiagovilasboas/downshift-ai)** | Context compaction and policy-aware subagent routing for AI coding agents | `brew install tiagovilasboas/tap/downshift` |
 
 ---
 
 ## ⚡ Quick Start
+
+### Install `downshift`
+
+```bash
+brew install tiagovilasboas/tap/downshift
+
+# Verify and configure harnesses:
+downshift version
+downshift setup --dry-run
+```
 
 ### Install `agyo` (Antigravity Operator)
 
@@ -36,7 +47,7 @@ brew install agyo
 To update installed tools:
 ```bash
 brew update
-brew upgrade agyo
+brew upgrade downshift agyo
 ```
 
 ---
@@ -44,6 +55,7 @@ brew upgrade agyo
 ## 🤝 Contributing & Issues
 
 - Issues with formulas: Open an issue in this repository.
+- Issues with `downshift` itself: Open an issue at [github.com/tiagovilasboas/downshift-ai](https://github.com/tiagovilasboas/downshift-ai).
 - Issues with `agyo` itself: Open an issue at [github.com/tiagovilasboas/antigravity-operator](https://github.com/tiagovilasboas/antigravity-operator).
 
 ---
