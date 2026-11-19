@@ -2,7 +2,7 @@ class Downshift < Formula
   desc "Context compaction and policy-aware subagent routing for AI coding agents"
   homepage "https://downshift-ai.vercel.app/"
   url "https://github.com/tiagovilasboas/downshift-ai/archive/refs/tags/v0.19.0.tar.gz"
-  sha256 "baa587eb675da44294a347fd6fcc61a389044cb74a19d4407d9e34530a6b8d92"
+  sha256 "cb62865f739df2ca30d63ebd024c91a76e189c1e2af5ce376651c59ed1d94fab"
   license "Apache-2.0"
   head "https://github.com/tiagovilasboas/downshift-ai.git", branch: "main"
 
