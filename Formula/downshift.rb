@@ -1,8 +1,8 @@
 class Downshift < Formula
   desc "Context compaction and policy-aware subagent routing for AI coding agents"
   homepage "https://downshift-ai.vercel.app/"
-  url "https://github.com/tiagovilasboas/downshift-ai/archive/refs/tags/v0.18.1.tar.gz"
-  sha256 "69de6e1ab2ee0d2ad4eacd10267983b1a858ccba1f42e5b3778941fb9c35af88"
+  url "https://github.com/tiagovilasboas/downshift-ai/archive/refs/tags/v0.19.0.tar.gz"
+  sha256 "baa587eb675da44294a347fd6fcc61a389044cb74a19d4407d9e34530a6b8d92"
   license "Apache-2.0"
   head "https://github.com/tiagovilasboas/downshift-ai.git", branch: "main"
 
@@ -14,6 +14,7 @@ class Downshift < Formula
       -X main.buildVersion=#{version}
     ]
     system "go", "build", *std_go_args(ldflags: ldflags), "./cmd/downshift"
+    generate_completions_from_executable(bin/"downshift", "completion")
   end
 
   test do
